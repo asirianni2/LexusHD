@@ -1,0 +1,25 @@
+value MessageFrame ::= {
+  messageId 18,
+  value MapData : {
+    msgIssueRevision [TEMPLATE_MSG_REVISION],
+    layerType intersectionData,
+    layerID 0,
+    intersections {
+      {
+        id {
+          id [TEMPLATE_FIELD_ID]
+        },
+        revision [TEMPLATE_REVISION],
+        refPoint {
+          lat [TEMPLATE_REF_LAT],
+          long [TEMPLATE_REF_LONG],
+          elevation [TEMPLATE_REF_ELEVATION]
+        },
+        laneWidth [TEMPLATE_LANE_WIDTH],
+        laneSet {
+[TEMPLATE_LANES]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+		{
+			laneID [TEMPLATE_LANE_ID],
+			[TEMPLATE_ACCESS_APPROACH]
+			laneAttributes {
+				directionalUse {[TEMPLATE_PATH_USE]},
+				sharedWith {[TEMPLATE_SHARED_WITH]},
+				laneType [TEMPLATE_LANE_TYPE]
+			},
+			nodeList nodes : {
+[TEMPLATE_LANE_NODES]
+			},
+			connectsTo {
+[TEMPLATE_LANE_CONNECTSTO]
+			}
+		}

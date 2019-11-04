@@ -1,0 +1,10 @@
+			  {
+				  delta node-XY6 : {
+					x [NODE_DELTA_X],
+					y [NODE_DELTA_Y]
+				  },
+				  attributes {
+					dWidth [NODE_DELTA_WIDTH],
+					dElevation [NODE_DELTA_ELEVATION],
+				  }
+			  }

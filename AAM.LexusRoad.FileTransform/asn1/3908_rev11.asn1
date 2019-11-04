@@ -1,0 +1,1270 @@
+value MessageFrame ::= {
+  messageId 18,
+  value MapData : {
+    msgIssueRevision 11,
+    layerType intersectionData,
+    layerID 0,
+    intersections {
+      {
+        id {
+          id 3908
+        },
+        revision 11,
+        refPoint {
+          lat -378341480,
+          long 1448263343,
+          elevation 230
+        },
+        laneWidth 310,
+        laneSet {
+          {
+            laneID 1,
+            ingressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1260,
+                  y -1298
+                },
+                attributes {
+                  dWidth -23,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -2576,
+                  y -24486
+                },
+                attributes {
+                  dWidth -14,
+                  dElevation -40
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 50,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 1
+              }
+            }
+          },
+          {
+            laneID 2,
+            ingressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -953,
+                  y -1380
+                },
+                attributes {
+                  dWidth 17,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -2593,
+                  y -24427
+                },
+                attributes {
+                  dWidth -17,
+                  dElevation -40
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 51,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 1
+              }
+            }
+          },
+          {
+            laneID 3,
+            ingressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -646,
+                  y -1462
+                },
+                attributes {
+                  dWidth 22,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -708,
+                  y -6854
+                },
+                attributes {
+                  dWidth -4
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -449,
+                  y -2716
+                },
+                attributes {
+                  dWidth -310
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 0,
+                  y 12
+                },
+                attributes {
+                  dWidth -310
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 56,
+                  maneuver {maneuverRightAllowed}
+                },
+                signalGroup 5
+              }
+            }
+          },
+          {
+            laneID 11,
+            ingressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {cyclistVehicleTraffic},
+              laneType bikeLane : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1457,
+                  y -1240
+                },
+                attributes {
+                  dWidth -178,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -2580,
+                  y -24512
+                },
+                attributes {
+                  dElevation -40
+                }
+              }
+            }
+          },
+          {
+            laneID 53,
+            egressApproach 5,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 222,
+                  y -1404
+                },
+                attributes {
+                  dWidth 89,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -12,
+                  y -400
+                },
+                attributes {
+                  dWidth -65
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -47,
+                  y -494
+                },
+                attributes {
+                  dWidth -6
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -2446,
+                  y -23632
+                },
+                attributes {
+                  dWidth 32,
+                  dElevation -40
+                }
+              }
+            }
+          },
+          {
+            laneID 52,
+            egressApproach 5,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 647,
+                  y -1451
+                },
+                attributes {
+                  dWidth 144,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -94,
+                  y -482
+                },
+                attributes {
+                  dWidth -100
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -283,
+                  y -2492
+                },
+                attributes {
+                  dWidth -37
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -2222,
+                  y -21540
+                },
+                attributes {
+                  dWidth -8,
+                  dElevation -40
+                }
+              }
+            }
+          },
+          {
+            laneID 55,
+            egressApproach 6,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1745,
+                  y 442
+                },
+                attributes {
+                  dWidth 130
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 307,
+                  y -94
+                },
+                attributes {
+                  dWidth -108
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 626,
+                  y -82
+                },
+                attributes {
+                  dWidth -2
+                }
+              }
+            }
+          },
+          {
+            laneID 56,
+            egressApproach 6,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1556,
+                  y 78
+                },
+                attributes {
+                  dWidth 37
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1074,
+                  y -141
+                },
+                attributes {
+                  dWidth -2
+                }
+              }
+            }
+          },
+          {
+            laneID 4,
+            ingressApproach 3,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1219,
+                  y 1406
+                },
+                attributes {
+                  dWidth 36,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1003,
+                  y 9417
+                },
+                attributes {
+                  dWidth -24,
+                  dElevation 30
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 12,
+                  y 400
+                },
+                attributes {
+                  dWidth -51
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -59,
+                  y 811
+                },
+                attributes {
+                  dWidth -310
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 55,
+                  maneuver {maneuverLeftAllowed}
+                },
+                signalGroup 8
+              }
+            }
+          },
+          {
+            laneID 5,
+            ingressApproach 3,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 877,
+                  y 1383
+                },
+                attributes {
+                  dWidth 28,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 2101,
+                  y 19962
+                },
+                attributes {
+                  dWidth -8
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 142,
+                  y 1082
+                },
+                attributes {
+                  dWidth 16,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 177,
+                  y 976
+                },
+                attributes {
+                  dWidth -4,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 189,
+                  y 647
+                },
+                attributes {
+                  dWidth 25
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 342,
+                  y 811
+                },
+                attributes {
+                  dWidth 24
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 649,
+                  y 1281
+                },
+                attributes {
+                  dWidth 2,
+                  dElevation -10
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 52,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 2
+              }
+            }
+          },
+          {
+            laneID 6,
+            ingressApproach 3,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 535,
+                  y 1359
+                },
+                attributes {
+                  dWidth 29
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 2231,
+                  y 21021
+                },
+                attributes {
+                  dWidth -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 189,
+                  y 1093
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 260,
+                  y 894
+                },
+                attributes {
+                  dWidth 28,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 366,
+                  y 835
+                },
+                attributes {
+                  dWidth -7
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 496,
+                  y 952
+                },
+                attributes {
+                  dWidth -14
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 53,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 2
+              }
+            }
+          },
+          {
+            laneID 7,
+            ingressApproach 3,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 192,
+                  y 1347
+                },
+                attributes {
+                  dWidth 45
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 673,
+                  y 6301
+                },
+                attributes {
+                  dWidth -30,
+                  dElevation 30
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 366,
+                  y 2151
+                },
+                attributes {
+                  dWidth -257,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 130,
+                  y 1070
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 0,
+                  y 12
+                },
+                attributes {
+                  dWidth -310
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 54,
+                  maneuver {maneuverRightAllowed}
+                },
+                signalGroup 6
+              }
+            }
+          },
+          {
+            laneID 50,
+            egressApproach 7,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1036,
+                  y 1682
+                },
+                attributes {
+                  dWidth 54,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 750,
+                  y 7365
+                },
+                attributes {
+                  dWidth -38,
+                  dElevation 20
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1110,
+                  y 10551
+                },
+                attributes {
+                  dWidth 2,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 218,
+                  y 1499
+                },
+                attributes {
+                  dWidth 43,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 165,
+                  y 682
+                },
+                attributes {
+                  dWidth 17
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 413,
+                  y 1540
+                },
+                attributes {
+                  dWidth -12,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 142,
+                  y 770
+                },
+                attributes {
+                  dWidth -21
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 6,
+                  y 670
+                },
+                attributes {
+                  dWidth 20
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -100,
+                  y 758
+                },
+                attributes {
+                  dWidth 11
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -59,
+                  y 270
+                },
+                attributes {
+                  dWidth -8
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -159,
+                  y 464
+                },
+                attributes {
+                  dWidth -18
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -201,
+                  y 364
+                },
+                attributes {
+                  dElevation -10
+                }
+              }
+            }
+          },
+          {
+            laneID 51,
+            egressApproach 7,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -693,
+                  y 1659
+                },
+                attributes {
+                  dWidth 4,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 496,
+                  y 5273
+                },
+                attributes {
+                  dWidth -17,
+                  dElevation 20
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1387,
+                  y 12915
+                },
+                attributes {
+                  dWidth 26,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 213,
+                  y 1158
+                },
+                attributes {
+                  dWidth 30,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 148,
+                  y 688
+                },
+                attributes {
+                  dWidth -14
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 407,
+                  y 1452
+                },
+                attributes {
+                  dWidth 17,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 89,
+                  y 400
+                },
+                attributes {
+                  dWidth 12
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 71,
+                  y 511
+                },
+                attributes {
+                  dWidth -3
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 24,
+                  y 611
+                },
+                attributes {
+                  dWidth -13
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -41,
+                  y 523
+                },
+                attributes {
+                  dWidth 4
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -112,
+                  y 605
+                },
+                attributes {
+                  dWidth 6
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -159,
+                  y 500
+                },
+                attributes {
+                  dWidth -6
+                }
+              }
+            }
+          },
+          {
+            laneID 54,
+            egressApproach 8,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -2063,
+                  y 148
+                },
+                attributes {
+                  dWidth 354
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -1234,
+                  y 123
+                },
+                attributes {
+                  dWidth 14
+                }
+              }
+            }
+          },
+          {
+            laneID 58,
+            egressApproach 9,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1431,
+                  y -15758
+                },
+                attributes {
+                  dWidth -310,
+                  dElevation -20
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -437,
+                  y -2868
+                },
+                attributes {
+                  dWidth 322,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -723,
+                  y -6874
+                },
+                attributes {
+                  dWidth 16,
+                  dElevation -20
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -89,
+                  y -394
+                },
+                attributes {
+                  dWidth 99
+                }
+              }
+            }
+          },
+          {
+            laneID 57,
+            egressApproach 10,
+            laneAttributes {
+              directionalUse {egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -147,
+                  y 6109
+                },
+                attributes {
+                  dWidth -310,
+                  dElevation 30
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 437,
+                  y 2986
+                },
+                attributes {
+                  dWidth 208,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 460,
+                  y 3562
+                },
+                attributes {
+                  dWidth 147
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 130,
+                  y 506
+                },
+                attributes {
+                  dWidth 124
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 153,
+                  y 364
+                },
+                attributes {
+                  dWidth 254
+                }
+              }
+            }
+          },
+          {
+            laneID 10,
+            ingressApproach 4,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -2057,
+                  y 730
+                },
+                attributes {
+                  dWidth 190
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -1175,
+                  y 123
+                },
+                attributes {
+                  dWidth -12
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 50,
+                  maneuver {maneuverLeftAllowed}
+                },
+                signalGroup 4
+              },
+              {
+                connectingLane {
+                  lane 56,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 4
+              },
+              {
+                connectingLane {
+                  lane 53,
+                  maneuver {maneuverRightAllowed}
+                },
+                signalGroup 4
+              }
+            }
+          },
+          {
+            laneID 8,
+            ingressApproach 2,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1542,
+                  y -875
+                },
+                attributes {
+                  dWidth 97,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 301,
+                  y 0
+                },
+                attributes {
+                  dWidth -73
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 697,
+                  y -94
+                },
+                attributes {
+                  dWidth 8,
+                  dElevation 10
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 52,
+                  maneuver {maneuverLeftAllowed}
+                },
+                signalGroup 3
+              },
+              {
+                connectingLane {
+                  lane 54,
+                  maneuver {maneuverStraightAllowed}
+                },
+                signalGroup 3
+              },
+              {
+                connectingLane {
+                  lane 50,
+                  maneuver {maneuverRightAllowed}
+                },
+                signalGroup 3
+              }
+            }
+          },
+          {
+            laneID 9,
+            ingressApproach 2,
+            laneAttributes {
+              directionalUse {ingressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1606,
+                  y -506
+                },
+                attributes {
+                  dWidth 31,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 962,
+                  y -112
+                },
+                attributes {
+                  dWidth 12,
+                  dElevation 10
+                }
+              }
+            },
+            connectsTo {
+              {
+                connectingLane {
+                  lane 51,
+                  maneuver {maneuverRightAllowed}
+                },
+                signalGroup 3
+              }
+            }
+          },
+          {
+            laneID 19,
+            laneAttributes {
+              directionalUse {},
+              sharedWith {pedestriansTraffic, cyclistVehicleTraffic},
+              laneType crosswalk : {bicyleUseAllowed, hasPushToWalkButton}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1923,
+                  y -245
+                },
+                attributes {
+                  dWidth -180
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 136,
+                  y 1217
+                },
+                attributes {
+                  dWidth -178
+                }
+              }
+            }
+          },
+          {
+            laneID 21,
+            laneAttributes {
+              directionalUse {},
+              sharedWith {pedestriansTraffic, cyclistVehicleTraffic},
+              laneType crosswalk : {bicyleUseAllowed, hasPushToWalkButton}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1474,
+                  y -926
+                },
+                attributes {
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1045,
+                  y -294
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 1393,
+                  y -129
+                }
+              }
+            }
+          },
+          {
+            laneID 22,
+            laneAttributes {
+              directionalUse {},
+              sharedWith {pedestriansTraffic, cyclistVehicleTraffic},
+              laneType crosswalk : {bicyleUseAllowed, hasPushToWalkButton}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1206,
+                  y -1161
+                },
+                attributes {
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 153,
+                  y 1082
+                },
+                attributes {
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 378,
+                  y 817
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

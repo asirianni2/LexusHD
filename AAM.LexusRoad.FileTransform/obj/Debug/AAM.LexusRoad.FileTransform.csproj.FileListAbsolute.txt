@@ -1,0 +1,6 @@
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.exe.config
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.exe
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.pdb
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.csprojResolveAssemblyReference.cache
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.exe
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.pdb

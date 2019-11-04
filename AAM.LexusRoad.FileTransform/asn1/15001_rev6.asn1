@@ -1,0 +1,530 @@
+value MessageFrame ::= {
+  messageId 18,
+  value MapData : {
+    msgIssueRevision 6,
+    layerType intersectionData,
+    layerID 0,
+    intersections {
+      {
+        id {
+          id 15001
+        },
+        revision 6,
+        refPoint {
+          lat -378315706,
+          long 1448266887,
+          elevation 150
+        },
+        laneWidth 310,
+        laneSet {
+          {
+            laneID 5,
+            ingressApproach 1,
+            egressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath, egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1975,
+                  y -1723
+                },
+                attributes {
+                  dWidth 146,
+                  dElevation 70
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -295,
+                  y 741
+                },
+                attributes {
+                  dWidth -45
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -130,
+                  y 423
+                },
+                attributes {
+                  dWidth 22
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -26,
+                  y 287
+                },
+                attributes {
+                  dWidth -18
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -21,
+                  y 466
+                },
+                attributes {
+                  dWidth -15
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 80,
+                  y 475
+                },
+                attributes {
+                  dWidth 3
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 121,
+                  y 466
+                },
+                attributes {
+                  dWidth 36
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 295,
+                  y 623
+                },
+                attributes {
+                  dWidth 114
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 236,
+                  y 329
+                },
+                attributes {
+                  dWidth 139
+                }
+              }
+            }
+          },
+          {
+            laneID 6,
+            ingressApproach 1,
+            egressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath, egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x 1399,
+                  y -2253
+                },
+                attributes {
+                  dWidth 247,
+                  dElevation 60
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 218,
+                  y 229
+                },
+                attributes {
+                  dWidth -110
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 433,
+                  y 677
+                },
+                attributes {
+                  dWidth 41
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 130,
+                  y 235
+                },
+                attributes {
+                  dWidth -14
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 177,
+                  y 541
+                },
+                attributes {
+                  dWidth 9,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 35,
+                  y 623
+                },
+                attributes {
+                  dWidth -50
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -35,
+                  y 247
+                },
+                attributes {
+                  dWidth -2
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -47,
+                  y 282
+                },
+                attributes {
+                  dWidth -21
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -142,
+                  y 376
+                },
+                attributes {
+                  dWidth 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -201,
+                  y 459
+                },
+                attributes {
+                  dWidth 83,
+                  dElevation 10
+                }
+              }
+            }
+          },
+          {
+            laneID 4,
+            ingressApproach 1,
+            egressApproach 1,
+            laneAttributes {
+              directionalUse {ingressPath, egressPath},
+              sharedWith {},
+              laneType vehicle : {}
+            },
+            nodeList nodes : {
+              {
+                delta node-XY6 : {
+                  x -1019,
+                  y 1898
+                },
+                attributes {
+                  dWidth 262,
+                  dElevation 80
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 401,
+                  y 165
+                },
+                attributes {
+                  dWidth 13,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 460,
+                  y 82
+                },
+                attributes {
+                  dWidth 5
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 189,
+                  y 0
+                },
+                attributes {
+                  dWidth 12
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 401,
+                  y -47
+                },
+                attributes {
+                  dWidth 19
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 366,
+                  y -118
+                },
+                attributes {
+                  dWidth 23
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 213,
+                  y -153
+                },
+                attributes {
+                  dWidth -119,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 413,
+                  y -376
+                },
+                attributes {
+                  dWidth -84
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 340,
+                  y -548
+                },
+                attributes {
+                  dWidth -73
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 156,
+                  y -404
+                },
+                attributes {
+                  dWidth 2
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 59,
+                  y -341
+                },
+                attributes {
+                  dWidth 11
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -32,
+                  y -489
+                },
+                attributes {
+                  dWidth 17
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -47,
+                  y -259
+                },
+                attributes {
+                  dWidth 18
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -145,
+                  y -369
+                },
+                attributes {
+                  dWidth -7
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -451,
+                  y -624
+                },
+                attributes {
+                  dWidth 141
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -45,
+                  y -81
+                },
+                attributes {
+                  dWidth 45
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -437,
+                  y -270
+                },
+                attributes {
+                  dWidth 5,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -177,
+                  y -71
+                },
+                attributes {
+                  dWidth 14
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -590,
+                  y -118
+                },
+                attributes {
+                  dWidth -14
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -578,
+                  y 59
+                },
+                attributes {
+                  dWidth -2
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -201,
+                  y 71
+                },
+                attributes {
+                  dWidth -3
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -366,
+                  y 165
+                },
+                attributes {
+                  dWidth 14,
+                  dElevation 10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -378,
+                  y 282
+                },
+                attributes {
+                  dWidth 13,
+                  dElevation -10
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -378,
+                  y 623
+                },
+                attributes {
+                  dWidth -207
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -132,
+                  y 393
+                },
+                attributes {
+                  dWidth -18
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -57,
+                  y 325
+                },
+                attributes {
+                  dWidth 2
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x -12,
+                  y 364
+                },
+                attributes {
+                  dWidth 6
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 71,
+                  y 447
+                },
+                attributes {
+                  dWidth 4
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 153,
+                  y 400
+                },
+                attributes {
+                  dWidth 35
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 248,
+                  y 388
+                },
+                attributes {
+                  dWidth 48
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 213,
+                  y 212
+                },
+                attributes {
+                  dWidth 13
+                }
+              },
+              {
+                delta node-XY6 : {
+                  x 342,
+                  y 282
+                },
+                attributes {
+                  dWidth 68,
+                  dElevation 10
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
