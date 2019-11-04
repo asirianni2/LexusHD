@@ -18,8 +18,6 @@ namespace AAM.LexusRoad.FileTransform
             // Get the input csv folder path and output asn1 folder path from App.config;
             var csvDir = ConfigurationManager.AppSettings["csv.path"];
             var asn1Dir = ConfigurationManager.AppSettings["asn1.path"];
-            // var csvDir = DirProject(2) + @"\csv\";
-            // var asn1Dir = DirProject(2) + @"\asn1\";
 
             var revisionId = ConfigurationManager.AppSettings["revision"];
             var laneWidth = ConfigurationManager.AppSettings["lane_width"];
@@ -28,6 +26,16 @@ namespace AAM.LexusRoad.FileTransform
 
             try
             {
+                if (!Directory.Exists(csvDir))
+                {
+                    Directory.CreateDirectory(csvDir);
+                }
+
+                if (!Directory.Exists(asn1Dir))
+                {
+                    Directory.CreateDirectory(asn1Dir);
+                }
+
                 // Get the list of names of all the csv files;
                 var csvFiles = Directory.GetFiles(csvDir, "*.csv")
                     .Select(Path.GetFileName)
