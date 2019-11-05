@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+  <Document>
+    <name>17023.KML</name>
+      <Placemark>
+        <name>Ref</name>
+        <Point>
+          <coordinates>144.792708464,-37.839056873,21.303</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>50-1</name>
+        <Point>
+          <coordinates>144.792359979,-37.839093260,21.051</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>50-2</name>
+        <Point>
+          <coordinates>144.792642555,-37.838963279,21.218</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>50-3</name>
+        <Point>
+          <coordinates>144.798237311,-37.836327647,21.082</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>51-1</name>
+        <Point>
+          <coordinates>144.798268994,-37.836374495,21.054</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>51-2</name>
+        <Point>
+          <coordinates>144.792394143,-37.839140688,20.961</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>p1</name>
+        <LineString>
+          <coordinates>
+144.792359979,-37.839093260,0 144.792642555,-37.838963279,0 144.798237311,-37.836327647,0 </coordinates>
+        </LineString>
+      </Placemark>
+      <Placemark>
+        <name>p4</name>
+        <LineString>
+          <coordinates>
+144.798268994,-37.836374495,0 144.792394143,-37.839140688,0 </coordinates>
+        </LineString>
+      </Placemark>
+  </Document>
+</kml>

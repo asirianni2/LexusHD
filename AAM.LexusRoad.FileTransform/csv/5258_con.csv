@@ -1,0 +1,14 @@
+1,50,1,7,1,Straight
+2,51,1,7,1,Straight
+1,61,1,4,1,Left
+4,53,3,5,2,Straight
+5,54,3,5,2,Straight
+8,61,2,4,3,Straight
+8,51,2,7,3,Right
+9,60,4,6,4,Straight
+9,50,4,7,4,Left
+9,54,4,5,4,Right
+3,60,1,6,5,Right
+6,61,3,4,6,Right
+4,60,3,6,7,Left
+7,53,2,5,8,Left
