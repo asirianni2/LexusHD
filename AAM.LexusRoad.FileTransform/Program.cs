@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -294,7 +293,7 @@ namespace AAM.LexusRoad.FileTransform
                         // Since second point dWidth = [(SecondPoint - FirstPoint)*100], then round to the nearest integer.
                         intersectionX.Lanes[lx].LaneNodes[nx].DeltaWidth = Math.Round((curWidth - preWidth) * 100);
                         // Since second point dElevation = [(SecondPoint - FirstPoint)*100], then round to the nearest integer.
-                        intersectionX.Lanes[lx].LaneNodes[nx].DeltaWidth = Math.Round((curElevation - preElevation) * 100);
+                        intersectionX.Lanes[lx].LaneNodes[nx].DeltaElevation = Math.Round((curElevation - preElevation) * 100);
                         // Since second point DeltaX and DeltaY = [(SecondPoint - FirstPoint)*100], then round to the nearest integer.
                         intersectionX.Lanes[lx].LaneNodes[nx].DeltaX = Math.Round((curX - preX) * 100);
                         intersectionX.Lanes[lx].LaneNodes[nx].DeltaY = Math.Round((curY - preY) * 100);
@@ -353,7 +352,9 @@ namespace AAM.LexusRoad.FileTransform
                         var oneConnection = Copy(laneConnectionTemplate);
                         oneConnection = oneConnection.Replace("[CONNECT_LANE_ID]", connectionX.ConnectingLaneId);
                         oneConnection = oneConnection.Replace("[CONNECT_MANEUVER_TYPE]", "{maneuver" + connectionX.Manouver + "Allowed}");
+                        oneConnection = oneConnection.Replace("[REMOTE_INTERSECTION_ID]", intersectionX.IntersectionNo);
                         oneConnection = oneConnection.Replace("[CONNECT_SIGNAL_GROUP]", connectionX.SignalGroup);
+                        oneConnection = oneConnection.Replace("[CONNECTION_ID]", (ix+1).ToString());
 
                         if (ix > 0)
                         {
@@ -407,13 +408,13 @@ namespace AAM.LexusRoad.FileTransform
                     case "Enter":
                         oneLane = oneLane.Replace("[TEMPLATE_ACCESS_APPROACH]", "ingressApproach " + laneApproachId + ",");
                         oneLane = oneLane.Replace("[TEMPLATE_PATH_USE]", "ingressPath");
-                        oneLane = oneLane.Replace("[TEMPLATE_SHARED_WITH]", "ingressPath");
+                        oneLane = oneLane.Replace("[TEMPLATE_SHARED_WITH]", "");
                         oneLane = oneLane.Replace("[TEMPLATE_LANE_TYPE]", "vehicle : {}");
                         break;
                     case "Exit":
                         oneLane = oneLane.Replace("[TEMPLATE_ACCESS_APPROACH]", "egressApproach " + laneApproachId + ",");
                         oneLane = oneLane.Replace("[TEMPLATE_PATH_USE]", "egressPath");
-                        oneLane = oneLane.Replace("[TEMPLATE_SHARED_WITH]", "egressPath");
+                        oneLane = oneLane.Replace("[TEMPLATE_SHARED_WITH]", "");
                         oneLane = oneLane.Replace("[TEMPLATE_LANE_TYPE]", "vehicle : {}");
                         break;
                     case "Crosswalk":
@@ -439,13 +440,15 @@ namespace AAM.LexusRoad.FileTransform
                 laneContent += oneLane;
             }
 
+            var refLat = intersectionX.RefPoint.Latitude.Replace(".", Empty);
+            var refLong = intersectionX.RefPoint.Longitude.Replace(".", Empty);
             var asnContent = Copy(asnTemplate);
             asnContent = asnContent.Replace("[TEMPLATE_MSG_REVISION]", revisionId);
             asnContent = asnContent.Replace("[TEMPLATE_FIELD_ID]", intersectionX.IntersectionNo);
             asnContent = asnContent.Replace("[TEMPLATE_REVISION]", revisionId);
             asnContent = asnContent.Replace("[TEMPLATE_REGION_ID]", regionId);
-            asnContent = asnContent.Replace("[TEMPLATE_REF_LAT]", intersectionX.RefPoint.Latitude);
-            asnContent = asnContent.Replace("[TEMPLATE_REF_LONG]", intersectionX.RefPoint.Longitude);
+            asnContent = asnContent.Replace("[TEMPLATE_REF_LAT]", refLat);
+            asnContent = asnContent.Replace("[TEMPLATE_REF_LONG]", refLong);
             asnContent = asnContent.Replace("[TEMPLATE_REF_ELEVATION]", intersectionX.RefPoint.Elevation);
             asnContent = asnContent.Replace("[TEMPLATE_LANE_WIDTH]", laneWidth);
             asnContent = asnContent.Replace("[TEMPLATE_LANES]", laneContent);
@@ -462,30 +465,9 @@ namespace AAM.LexusRoad.FileTransform
 
             if (willGetBinary)
             {
-                Asn1ToBinary(intersectionX, asnContent, "");
-                Console.WriteLine("");
+                // Asn1ToBinary(intersectionX, asnContent, "");
+                // Console.WriteLine("");
             }
-        }
-
-        /*
-         *  Convert asn1 file to UPER encoded binary;
-         */
-        public static void Asn1ToBinaryUPER(Intersection intersectionX, string asnContent, string intersectionDir)
-        {
-            XmlDocument asnXml = JsonConvert.DeserializeXmlNode(asnContent);
-
-            Chilkat.Asn asn = new Chilkat.Asn();
-            Chilkat.Xml xml = new Chilkat.Xml();
-            bool success = xml.LoadXml(asnXml.InnerXml);
-
-            //  Now get the ASN.1 in base64 format.  Any encoding supported
-            //  by Chilkat can be passed, such as "hex", "uu", "quoted-printable", "base32", "modbase64", etc.
-            string strBase64 = asn.GetEncodedDer("base64");
-
-            //  Load the ASN.1 from an encoded string, such as base64:
-            // Chilkat.Asn asn3 = new Chilkat.Asn();
-            // success = asn3.LoadEncoded(strBase64, "base64");
-
         }
 
         /*
@@ -497,13 +479,13 @@ namespace AAM.LexusRoad.FileTransform
 
             XmlDocument asnXml = JsonConvert.DeserializeXmlNode(asnContent);
 
-            Chilkat.Asn asn = new Chilkat.Asn();
-            Chilkat.Xml xml = new Chilkat.Xml();
-            bool success = xml.LoadXml(asnXml.InnerXml);
+            // Chilkat.Asn asn = new Chilkat.Asn();
+            // Chilkat.Xml xml = new Chilkat.Xml();
+            // bool success = xml.LoadXml(asnXml.InnerXml);
 
             //  Now get the ASN.1 in base64 format.  Any encoding supported
             //  by Chilkat can be passed, such as "hex", "uu", "quoted-printable", "base32", "modbase64", etc.
-            string strBase64 = asn.GetEncodedDer("base64");
+            // string strBase64 = asn.GetEncodedDer("base64");
 
             //  Load the ASN.1 from an encoded string, such as base64:
             // Chilkat.Asn asn3 = new Chilkat.Asn();

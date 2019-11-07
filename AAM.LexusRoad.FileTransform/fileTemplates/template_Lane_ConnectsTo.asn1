@@ -3,5 +3,9 @@
 						lane [CONNECT_LANE_ID],
 						maneuver {[CONNECT_MANEUVER_TYPE]}
 					},
-					signalGroup [CONNECT_SIGNAL_GROUP]
+					remoteIntersection {
+						id [REMOTE_INTERSECTION_ID]
+					},
+					signalGroup [CONNECT_SIGNAL_GROUP],
+					connectionID [CONNECTION_ID]
 				}

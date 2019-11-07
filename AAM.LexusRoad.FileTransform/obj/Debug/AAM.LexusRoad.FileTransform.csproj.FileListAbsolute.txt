@@ -1,9 +1,13 @@
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.exe.config
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.exe
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\AAM.LexusRoad.FileTransform.pdb
-D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.csprojResolveAssemblyReference.cache
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.exe
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.pdb
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\ChilkatDotNet45.dll
-D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Oss.DCodec.dll
-D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Oss.DCodec.xml
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\asn1csrt.dll
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\BERcodec.dll
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Newtonsoft.Json.dll
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\asn1csrt.xml
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\BERcodec.pdb
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Newtonsoft.Json.xml
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.csprojResolveAssemblyReference.cache

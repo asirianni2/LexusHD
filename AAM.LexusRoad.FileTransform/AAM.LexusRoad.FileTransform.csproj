@@ -36,7 +36,11 @@
     <Reference Include="asn1csrt">
       <HintPath>..\External_DLLs\asn1csrt.dll</HintPath>
     </Reference>
-    <Reference Include="ChilkatDotNet45">
+    <Reference Include="BERcodec">
+      <HintPath>..\External_DLLs\BERcodec.dll</HintPath>
+    </Reference>
+    <Reference Include="ChilkatDotNet45, Version=9.5.0.80, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\External_DLLs\ChilkatDotNet45.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
