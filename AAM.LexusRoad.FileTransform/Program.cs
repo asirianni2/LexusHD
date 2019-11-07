@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Xml;
 using AAM.LexusRoad.FileTransform.Models;
+using Newtonsoft.Json;
+using Oss.Asn1;
 using static System.String;
 
 namespace AAM.LexusRoad.FileTransform
@@ -20,7 +24,11 @@ namespace AAM.LexusRoad.FileTransform
             var asn1Dir = ConfigurationManager.AppSettings["asn1.path"];
 
             var revisionId = ConfigurationManager.AppSettings["revision"];
+            var regionId = ConfigurationManager.AppSettings["regionId"];
             var laneWidth = ConfigurationManager.AppSettings["lane_width"];
+            var layerType = ConfigurationManager.AppSettings["layer_type"];
+
+            asn1Dir += layerType + "\\";
 
             var intersections = new List<Intersection>();
 
@@ -96,11 +104,13 @@ namespace AAM.LexusRoad.FileTransform
                 Console.WriteLine(ex.StackTrace);
             }
 
-            Console.WriteLine("Tasks finished. Application exits in 2s.");
+            Console.WriteLine("Tasks finished.");
+            Console.WriteLine("Application exits in 2s.");
             Thread.Sleep(1000);
-            Console.WriteLine("Tasks finished. Application exits in 1s.");
+            Console.WriteLine("Application exits in 1s.");
             Thread.Sleep(1000);
-            Console.WriteLine("Tasks finished. Application terminated.");
+            Console.WriteLine("Application terminated.");
+            Thread.Sleep(100);
             Environment.Exit(0);
         }
 
@@ -307,7 +317,10 @@ namespace AAM.LexusRoad.FileTransform
         {
             // Read configs from App.config;
             var revisionId = ConfigurationManager.AppSettings["revision"];
+            var regionId = ConfigurationManager.AppSettings["regionId"];
             var laneWidth = ConfigurationManager.AppSettings["lane_width"];
+            var layerType = ConfigurationManager.AppSettings["layer_type"];
+            var willGetBinary = bool.Parse(ConfigurationManager.AppSettings["ToBinary"]);
 
             var outFile = intersectionX.IntersectionNo + "_rev" + revisionId + ".asn1";
             var outputPath = intersectionDir + outFile;
@@ -430,6 +443,7 @@ namespace AAM.LexusRoad.FileTransform
             asnContent = asnContent.Replace("[TEMPLATE_MSG_REVISION]", revisionId);
             asnContent = asnContent.Replace("[TEMPLATE_FIELD_ID]", intersectionX.IntersectionNo);
             asnContent = asnContent.Replace("[TEMPLATE_REVISION]", revisionId);
+            asnContent = asnContent.Replace("[TEMPLATE_REGION_ID]", regionId);
             asnContent = asnContent.Replace("[TEMPLATE_REF_LAT]", intersectionX.RefPoint.Latitude);
             asnContent = asnContent.Replace("[TEMPLATE_REF_LONG]", intersectionX.RefPoint.Longitude);
             asnContent = asnContent.Replace("[TEMPLATE_REF_ELEVATION]", intersectionX.RefPoint.Elevation);
@@ -445,6 +459,56 @@ namespace AAM.LexusRoad.FileTransform
             }
 
             File.WriteAllText(outputPath, asnContent);
+
+            if (willGetBinary)
+            {
+                Asn1ToBinary(intersectionX, asnContent, "");
+                Console.WriteLine("");
+            }
+        }
+
+        /*
+         *  Convert asn1 file to UPER encoded binary;
+         */
+        public static void Asn1ToBinaryUPER(Intersection intersectionX, string asnContent, string intersectionDir)
+        {
+            XmlDocument asnXml = JsonConvert.DeserializeXmlNode(asnContent);
+
+            Chilkat.Asn asn = new Chilkat.Asn();
+            Chilkat.Xml xml = new Chilkat.Xml();
+            bool success = xml.LoadXml(asnXml.InnerXml);
+
+            //  Now get the ASN.1 in base64 format.  Any encoding supported
+            //  by Chilkat can be passed, such as "hex", "uu", "quoted-printable", "base32", "modbase64", etc.
+            string strBase64 = asn.GetEncodedDer("base64");
+
+            //  Load the ASN.1 from an encoded string, such as base64:
+            // Chilkat.Asn asn3 = new Chilkat.Asn();
+            // success = asn3.LoadEncoded(strBase64, "base64");
+
+        }
+
+        /*
+         *  Convert asn1 file to binary;
+         */
+        public static void Asn1ToBinary(Intersection intersectionX, string asnContent, string intersectionDir)
+        {
+            
+
+            XmlDocument asnXml = JsonConvert.DeserializeXmlNode(asnContent);
+
+            Chilkat.Asn asn = new Chilkat.Asn();
+            Chilkat.Xml xml = new Chilkat.Xml();
+            bool success = xml.LoadXml(asnXml.InnerXml);
+
+            //  Now get the ASN.1 in base64 format.  Any encoding supported
+            //  by Chilkat can be passed, such as "hex", "uu", "quoted-printable", "base32", "modbase64", etc.
+            string strBase64 = asn.GetEncodedDer("base64");
+
+            //  Load the ASN.1 from an encoded string, such as base64:
+            // Chilkat.Asn asn3 = new Chilkat.Asn();
+            // success = asn3.LoadEncoded(strBase64, "base64");
+            
         }
 
         /*

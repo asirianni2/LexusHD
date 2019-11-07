@@ -4,3 +4,6 @@ D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\A
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.csprojResolveAssemblyReference.cache
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.exe
 D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\obj\Debug\AAM.LexusRoad.FileTransform.pdb
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\ChilkatDotNet45.dll
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Oss.DCodec.dll
+D:\_Projects\AAM.LexusRoad.FileTransform\AAM.LexusRoad.FileTransform\bin\Debug\Oss.DCodec.xml
